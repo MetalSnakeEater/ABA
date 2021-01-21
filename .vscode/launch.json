@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "ABA (Debug)",
+			"request": "launch",
+			"preLaunchTask": "ABA Win64 Debug Build",
+			"program": "D:\\UE 25\\Projects\\ABA\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABA (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "ABA Win64 DebugGame Build",
+			"program": "D:\\UE 25\\Projects\\ABA\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABA (Development)",
+			"request": "launch",
+			"preLaunchTask": "ABA Win64 Development Build",
+			"program": "D:\\UE 25\\Projects\\ABA\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABA (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "ABA Win64 Shipping Build",
+			"program": "D:\\UE 25\\Projects\\ABA\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABA (Test)",
+			"request": "launch",
+			"preLaunchTask": "ABA Win64 Test Build",
+			"program": "D:\\UE 25\\Projects\\ABA\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABAEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "ABAEditor Win64 Debug Build",
+			"program": "D:\\UE 25\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject"
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABAEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "ABAEditor Win64 DebugGame Build",
+			"program": "D:\\UE 25\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject"
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "ABAEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "ABAEditor Win64 Development Build",
+			"program": "D:\\UE 25\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject"
+			],
+			"cwd": "D:\\UE 25\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE 25\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\UE 25\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\UE 25\\Projects\\ABA\\ABA.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\UE 25\\UE_4.26"
+		}
+	]
+}

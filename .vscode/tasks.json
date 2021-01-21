@@ -1,0 +1,977 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ABA Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win32",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"Win64",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Shipping",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABA IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABA IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABA",
+				"IOS",
+				"Test",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABAEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Debug",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABAEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ABAEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		},
+		{
+			"label": "ABAEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"ABAEditor",
+				"Win64",
+				"Development",
+				"D:\\UE 25\\Projects\\ABA\\ABA.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\UE 25\\UE_4.26"
+			}
+		}
+	]
+}

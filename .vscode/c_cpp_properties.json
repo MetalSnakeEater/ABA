@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "ABAEditor Editor Win64 Development (ABA)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "D:\\UE 25\\Projects\\ABA\\.vscode\\compileCommands_ABA.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
